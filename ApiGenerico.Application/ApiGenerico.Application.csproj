@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiGenerico.Domain\ApiGenerico.Domain.csproj" />
+    <ProjectReference Include="..\ApiGenerico.Infrastructure\ApiGenerico.Infrastructure.csproj" />
+    <ProjectReference Include="..\ApiGenerico.Utils\ApiGenerico.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
+</Project>
