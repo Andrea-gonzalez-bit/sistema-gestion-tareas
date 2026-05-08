@@ -308,18 +308,6 @@ Frontend:
 - Mensaje controlado si las credenciales de login son incorrectas.
 - Modales para confirmar eliminaciones y cierre de sesión.
 
-## Estado de bonus
-
-Los bonus del documento son opcionales.
-
-No implementado actualmente:
-
-- Concurrencia optimista con `RowVersion`.
-- Caching con `IMemoryCache` para estados.
-- Auditoría desacoplada con `TaskHistory`.
-
-La solución prioriza el cumplimiento funcional principal, integración completa frontend-backend y documentación clara para ejecución local.
-
 ## Flujo recomendado de validación manual
 
 1. Ejecutar backend.
@@ -340,12 +328,4 @@ La solución prioriza el cumplimiento funcional principal, integración completa
 16. Eliminar un estado sin tareas asociadas.
 17. Apagar el backend y validar el mensaje de conexión en español.
 
-## Notas de entrega
 
-- El proyecto debe subirse a GitHub para cumplir el entregable del documento.
-- Antes de evaluar, confirmar que `VITE_API_BASE_URL` coincide con el perfil usado para ejecutar la API.
-- Si el certificado HTTPS local no está confiado, ejecutar:
-
-```bash
-dotnet dev-certs https --trust
-```
